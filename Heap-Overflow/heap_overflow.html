@@ -1,0 +1,63 @@
+<html><head><title>CIS 4930/6930, Programming Assignment 2</title>
+</head>
+
+<body>
+<h1>CIS 4930/6930, Programming Assignment 2</h1>
+
+<h2>Heap overflow attack</h2>
+
+Due: Thursday Oct 6 11:59pm. <br>
+
+<hr>
+
+
+<h3> Description </h3>
+In this assignment you will have an opportunity to write an exploit for a heap
+overflow vulnerability. You will use the <b>Redhat 8.0</b> VM image that was given to you.
+
+<h3> Task (10 pts) </h3>
+Find a heap overflow vulnerability in the source code <b>getscore_heap.c</b> which uses heap
+instead of stack buffers. Write an exploit for the vulnerability that gives you a shell on the local 
+system. You may want to first try the simple <b>heap.c</b> program we showed in the class. The
+exploit generator for this program is <b>heap_exploit.c</b>.
+
+<p><b>Hints:</b> 
+
+<ul>
+<li>
+You will need to first read the source code of the program to understand how the malloc/free functions are called.
+</li>
+<li>
+You will likely need to utilize both input parameters to make a working exploit.
+</li>
+<li>
+malloc/free behaves differently depending on the size of the requested buffers. You want to be careful in choosing the right
+size. You may want to make the size similar to the one in the simple heap.c program.
+</li>
+</ul>
+
+For this assignment, you shall submit the following:
+
+<ol>
+  <li> (4 pts) A log documenting your process of developing the exploit and the
+thinking behind the conclusions you draw when observing the program's
+behaviors, so that someone else who has not done it can follow the
+document to develop the same exploit as well; </li>
+
+  <li> (6 pts) Source code of the exploit generator, and what we need to type in to compile/run
+    your program.
+  </li>
+</ol>
+
+Put everything in a single compressed file and submit it on CANVAS.
+Even if you cannot finish a task, please still submit the log and 
+partially-working program so that we can know your progress.
+
+
+
+       </td>
+   </tr>
+</table>
+
+
+</body></html>
