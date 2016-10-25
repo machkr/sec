@@ -1,2 +1,2 @@
 #Systems Security
-###Assignment 2 - Heap Overflow
+###Assignment 2: Heap Overflow
